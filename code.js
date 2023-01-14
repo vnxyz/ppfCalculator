@@ -4,7 +4,7 @@ var calculateCompoundInterest = function(currentInvestment, annualInvestment, ra
   let currentYearInterest = 0;
 	for(i=0; i<timePeriod; i++) {
   	compoundedValue = compoundedValue + annualInvestment;
-  	currentYearInterest = compoundedValue*(Math.pow((1+rateOfInterest/12*12),12));
+  	currentYearInterest = compoundedValue*(Math.pow((1+rateOfInterest/1200),12));
     compoundedValue =  currentYearInterest;
   	console.log(`Year:${i+1} total amount: ${compoundedValue}`);
   }
